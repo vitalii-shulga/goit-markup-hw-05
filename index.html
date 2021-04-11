@@ -54,7 +54,7 @@
       <section class="page-hero dark-bg">
         <div class="container hero-container">
           <h1 class="title hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="btn-submit button" type="button">Заказать услугу</button>
+          <button class="btn-submit button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -109,28 +109,16 @@
           <h2 class="title section-title">Чем мы занимаемся</h2>
           <ul class="list about-list grid">
             <li class="about-item grid-item">
-              <img
-                src="./images/about/about-img-1.jpg"
-                alt="программист работает за рабочим столом"
-                width="370"
-                height="294"
-              />
+              <img src="./images/about/about-img-1.jpg" alt="десктопные приложения" width="370" height="294" />
+              <h3 class="about-label">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="about-item grid-item">
-              <img
-                src="./images/about/about-img-2.jpg"
-                alt="веб-дизайнер разрабатывает приложение для смартфонов"
-                width="370"
-                height="294"
-              />
+              <img src="./images/about/about-img-2.jpg" alt="мобильные приложения" width="370" height="294" />
+              <h3 class="about-label">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
             </li>
             <li class="about-item grid-item">
-              <img
-                src="./images/about/about-img-3.jpg"
-                alt="графический дизайнер работает над выбором цвета"
-                width="370"
-                height="294"
-              />
+              <img src="./images/about/about-img-3.jpg" alt="дизайнерские решения" width="370" height="294" />
+              <h3 class="about-label">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
             </li>
           </ul>
         </div>
@@ -401,5 +389,18 @@
         <div class="subscribe footer-block"></div>
       </div>
     </footer>
+
+    <!-- модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close button" type="button" aria-label="закрыть модальное окно" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
